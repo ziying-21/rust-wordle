@@ -1,0 +1,70 @@
+name: MyApp
+version: "1.0"
+about: Learn use Rust Crate!
+author: ziying-z21
+
+args:
+    - word:
+        help: Specify answer mode
+        short: w
+        long: word
+        takes_value: true
+        
+    - random:
+        help: Random mode
+        short: r
+        long: random
+
+    - difficult:
+        help: Difficult mode
+        short: D
+        
+        long: difficult
+
+    - stats:
+        help: Statistics of game data
+        short: t
+        
+        long: stats
+
+    - day:
+        help: Specifies the number of rounds of the beginning
+        short: d
+        takes_value: true
+        long: day
+
+    - seed:
+        help: Specify random seed
+        short: s
+        takes_value: true
+        long: seed
+
+    - final-set:
+        help: Specify answer Thesaurus
+        short: f
+        takes_value: true
+        long: final-set
+
+    - acceptable-set:
+        help: Specify candidate Thesaurus
+        short: a
+        takes_value: true
+        long: acceptable-set
+
+    - state:
+        help: Save and load game state in random mode
+        short: S
+        long: state
+        takes_value: true
+
+    - config:
+        help: Launch profile
+        short: c
+        long: config
+        takes_value: true
+
+    - screen:
+        help: Screen the possible words
+        short: e
+        long: screen
+    
